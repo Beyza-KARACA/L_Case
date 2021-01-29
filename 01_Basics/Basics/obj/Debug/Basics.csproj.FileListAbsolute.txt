@@ -1,0 +1,14 @@
+C:\Users\byzkr\source\repos\Basics\Basics\bin\Debug\Basics.exe.config
+C:\Users\byzkr\source\repos\Basics\Basics\bin\Debug\Basics.exe
+C:\Users\byzkr\source\repos\Basics\Basics\bin\Debug\Basics.pdb
+C:\Users\byzkr\source\repos\Basics\Basics\obj\Debug\Basics.csprojAssemblyReference.cache
+C:\Users\byzkr\source\repos\Basics\Basics\obj\Debug\Basics.csproj.CoreCompileInputs.cache
+C:\Users\byzkr\source\repos\Basics\Basics\obj\Debug\Basics.exe
+C:\Users\byzkr\source\repos\Basics\Basics\obj\Debug\Basics.pdb
+C:\Users\byzkr\Desktop\Lunes\Basics\Basics\bin\Debug\Basics.exe.config
+C:\Users\byzkr\Desktop\Lunes\Basics\Basics\bin\Debug\Basics.exe
+C:\Users\byzkr\Desktop\Lunes\Basics\Basics\bin\Debug\Basics.pdb
+C:\Users\byzkr\Desktop\Lunes\Basics\Basics\obj\Debug\Basics.csprojAssemblyReference.cache
+C:\Users\byzkr\Desktop\Lunes\Basics\Basics\obj\Debug\Basics.csproj.CoreCompileInputs.cache
+C:\Users\byzkr\Desktop\Lunes\Basics\Basics\obj\Debug\Basics.exe
+C:\Users\byzkr\Desktop\Lunes\Basics\Basics\obj\Debug\Basics.pdb
