@@ -1,21 +1,16 @@
-﻿using _02_BitmapPlayground.Filters;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Reflection;
-
+using _02_BitmapPlayground_Filters.Filters;
+using _02_BitmapPlayground_Filters;
+using System.Threading;
 
 namespace _02_BitmapPlayground
 {
-    
+
     public partial class Form1 : Form
     {
       
@@ -24,6 +19,7 @@ namespace _02_BitmapPlayground
             InitializeComponent();
 
             PopulateFilterPicker();
+
         }
        
         private void PopulateFilterPicker()
@@ -37,6 +33,7 @@ namespace _02_BitmapPlayground
                     FilterPickerBox.Items.Add(item);
             }
           
+
         }
 
         /// <summary>
@@ -76,23 +73,44 @@ namespace _02_BitmapPlayground
 
         private void ApplyFilterButton_Click(object sender, EventArgs e)
         {
-             if(FilterPickerBox.SelectedItem.ToString()== "GreyscaleFilter")
+          
+            if (FilterPickerBox.SelectedItem.ToString()== "GreyscaleFilter")
             {
-                GreyscaleFilter g = new GreyscaleFilter();
-                PictureBoxFiltered.Image = ApplyFilter(g, PictureBoxOriginal.Image);
+               
+               ThreadPool.QueueUserWorkItem(new WaitCallback(Greyscale));
+
             }
 
             if (FilterPickerBox.SelectedItem.ToString() == "RedFilter")
             {
-                RedFilter r = new RedFilter();
-                PictureBoxFiltered.Image = ApplyFilter(r, PictureBoxOriginal.Image);
+                
+                ThreadPool.QueueUserWorkItem(new WaitCallback(Red));
+                
             }
 
             if (FilterPickerBox.SelectedItem.ToString() == "MovingAverageFilter")
             {
-                MovingAverageFilter m = new MovingAverageFilter();
-                PictureBoxFiltered.Image = ApplyFilter(m, PictureBoxOriginal.Image);
+                
+                ThreadPool.QueueUserWorkItem(new WaitCallback(MovingAverage));
+                
             }
+
+        }
+
+        private void Red(Object obj)
+        {
+            PictureBoxFiltered.Image = ApplyFilter(new RedFilter(), PictureBoxOriginal.Image);
+
+        }
+        private void Greyscale(Object obj)
+        {
+            PictureBoxFiltered.Image = ApplyFilter(new GreyscaleFilter(), PictureBoxOriginal.Image);
+
+        }
+        private void MovingAverage(Object obj)
+        {
+            PictureBoxFiltered.Image = ApplyFilter(new MovingAverageFilter(), PictureBoxOriginal.Image);
+
         }
     }
 }

@@ -1,0 +1,8 @@
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\bin\Debug\netstandard2.0\02_BitmapPlayground_Filters.deps.json
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\bin\Debug\netstandard2.0\02_BitmapPlayground_Filters.dll
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\bin\Debug\netstandard2.0\02_BitmapPlayground_Filters.pdb
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\obj\Debug\netstandard2.0\02_BitmapPlayground_Filters.AssemblyInfoInputs.cache
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\obj\Debug\netstandard2.0\02_BitmapPlayground_Filters.AssemblyInfo.cs
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\obj\Debug\netstandard2.0\02_BitmapPlayground_Filters.csproj.CoreCompileInputs.cache
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\obj\Debug\netstandard2.0\02_BitmapPlayground_Filters.dll
+C:\Users\byzkr\Documents\GitHub\L_Case\02_BitmapPlayground\02_BitmapPlayground_Filters\obj\Debug\netstandard2.0\02_BitmapPlayground_Filters.pdb

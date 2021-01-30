@@ -12,12 +12,13 @@ namespace _03_Transactions.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using _03_Transactions.LocalResource;
 
     public partial class UserTransactions
     {
         public int TransactionId { get; set; }
 
-        [Display(Name = "Transaction")]
+        [Display(Name = "Transaction" )]
         public string TransactionName { get; set; }
 
         [Display(Name = "Amount")]

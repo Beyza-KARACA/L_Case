@@ -1,7 +1,9 @@
 ﻿<!DOCTYPE html>
+@using System.Globalization
+@using System.Threading;
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - ASP.NET Uygulamam</title>
@@ -17,17 +19,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("User Transaction", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("İşlemler", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-           
+
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - User Transaction</p>
+            <p>&copy; @DateTime.Now.Year -Lunes Case</p>
         </footer>
+        <ul style="margin-top:10px;">
+            @{
+                CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+
+                <li><a href="/Home/ChangeCurrentCulture/1">En</a></li>
+
+
+                <li><a href="/Home/ChangeCurrentCulture/0">Tr</a></li>
+
+
+            }
+        </ul>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

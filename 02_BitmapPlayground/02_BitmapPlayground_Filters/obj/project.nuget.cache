@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "W7lqTPNZ0HET6LU9R/E+d08FeV5clpB66ptDJyES+FPLmc4A1b9IAtPvWnQc7N27hcuhdDml8txdBxVBfxScpg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\byzkr\\Documents\\GitHub\\L_Case\\02_BitmapPlayground\\02_BitmapPlayground_Filters\\02_BitmapPlayground_Filters.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\byzkr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\byzkr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

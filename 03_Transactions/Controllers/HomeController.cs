@@ -3,21 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using _03_Transactions.Helper;
 using _03_Transactions.Models;
-using RealEstate.HtmlHelpers;
 
 namespace _03_Transactions.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         Lunes _dbTransaction = new Lunes();
-        [Localization]
         public ActionResult Index()
         {
             List<UserTransactions> transactionList = _dbTransaction.UserTransactions.ToList();
             return View(transactionList);
         }
 
+        public ActionResult ChangeCurrentCulture(int id)
+        {
+            //  
+            // Change the current culture for this user.  
+            //  
+            CultureHelper.CurrentCulture = id;
+            //  
+            // Cache the new current culture into the user HTTP session.   
+            //  
+            Session["CurrentCulture"] = id;
+            //  
+            // Redirect to the same page from where the request was made!   
+            //  
+            return Redirect(Request.UrlReferrer.ToString());
+        }
         public ActionResult Create()
         {
             return View();

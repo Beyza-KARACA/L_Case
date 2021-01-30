@@ -1,39 +1,46 @@
 ﻿@model IEnumerable<_03_Transactions.Models.UserTransactions>
+
+
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Transaction List</h2>
+<h2>İşlemler</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend></legend>
+        <p>
+            @Html.ActionLink("Oluştur", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    İşlem
+                </th>
+                <th>
+                    Miktar
+                </th>
+                <th></th>
+            </tr>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TransactionName)
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TransactionName)
+                    </td>
+                    <td>
+                        $ @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Düzenle", "Edit", new { id = item.TransactionId }) |
+                        @Html.ActionLink("Sil", "Delete", new { id = item.TransactionId })
+                    </td>
+                </tr>
+            }
 
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Amount)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TransactionName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Amount)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.TransactionId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.TransactionId })
-            </td>
-        </tr>
-    }
-
-</table>
+        </table>
+    </fieldset>
+}

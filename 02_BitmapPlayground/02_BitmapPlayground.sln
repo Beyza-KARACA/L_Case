@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_BitmapPlayground", "02_BitmapPlayground\02_BitmapPlayground.csproj", "{D0298F03-9069-4A54-A61B-AE821CD6B1F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_BitmapPlayground_Filters", "02_BitmapPlayground_Filters\02_BitmapPlayground_Filters.csproj", "{D1A454F1-EF59-43CE-9B37-4E10C057DE2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D0298F03-9069-4A54-A61B-AE821CD6B1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0298F03-9069-4A54-A61B-AE821CD6B1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0298F03-9069-4A54-A61B-AE821CD6B1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A454F1-EF59-43CE-9B37-4E10C057DE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A454F1-EF59-43CE-9B37-4E10C057DE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A454F1-EF59-43CE-9B37-4E10C057DE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A454F1-EF59-43CE-9B37-4E10C057DE2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
